@@ -90,11 +90,9 @@ const Login = () => {
     setResetPasswordError('');
     setResetPasswordSuccess('');
 
-SHIVANI
-
     try {
       await sendPasswordResetEmail(auth, resetPasswordEmail);
-      setResetPasswordSuccess('A password reset email has been sent jgvfsffd.');
+      setResetPasswordSuccess('A password reset email has been sent.');
     } catch (error) {
       setResetPasswordError('Error sending password reset email. Please try again.');
     }
