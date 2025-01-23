@@ -1,0 +1,39 @@
+/* Keyframes for blinking effect */
+@keyframes blink {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+  
+  /* Apply blinking effect to the warning icon */
+  .blink {
+    animation: blink 1.5s infinite;
+  }
+  
+  /* Optional: adjust hover effect */
+  .hover\:bg-yellow-300:hover {
+    background-color: rgba(255, 255, 0, 0.7); /* Slightly darker yellow on hover */
+  }
+
+    /* In your global stylesheet (or add this as inline styles in a <style> tag in your component) */
+
+
+  ul.list-blue-500 li::marker {
+    color: #3b82f6; /* Tailwind's blue-500 */
+  }
+
+  ul.list-green-500 li::marker {
+    color: #10B981; /* Tailwind's blue-500 */
+  }
+  
+  ul.list-red-500 li::marker {
+    color: #EF4444; /* Tailwind's blue-500 */
+  }
+
+  ul.list-yellow-500 li::marker {
+    color: #F59E0B; /* Tailwind's blue-500 */
+  }
+  
